@@ -3,6 +3,10 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+            name 'aliyun'
+        }
     }
 }
 dependencyResolutionManagement {
@@ -10,9 +14,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url 'https://maven.aliyun.com/repository/google'
+            name 'aliyun'
+        }
     }
 }
 rootProject.name = "JetpackDemo"
 include ':app'
 include ':livedata'
 include ':viewmodel'
+include ':databinding'
