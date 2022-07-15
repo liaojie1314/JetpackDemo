@@ -25,9 +25,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="修改数据"/>
+
+    <Button
+        android:id="@+id/btn_update_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改名字数据"/>
     <Button
         android:id="@+id/btn_query_all"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="查询所有数据"/>
+
+    <Button
+        android:id="@+id/btn_add_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="增加student数据"/>
+    <Button
+        android:id="@+id/btn_delete_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除student数据"/>
+
+    <Button
+        android:id="@+id/btn_query_all_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询学生所有数据"/>
 </LinearLayout>

@@ -1,6 +1,7 @@
 package io.liaojie1314.room.dao
 
 import androidx.room.*
+import io.liaojie1314.room.entity.UpdateNameBean
 import io.liaojie1314.room.entity.UserEntity
 
 @Dao
@@ -17,4 +18,7 @@ interface UserDao {
     //查询
     @Query("select * from user")
     fun queryUser():List<UserEntity>
+
+    @Update(entity = UserEntity::class)
+    fun updateUser2(vararg updateNameBean: UpdateNameBean)
 }
